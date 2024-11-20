@@ -59,8 +59,6 @@ tests:
     product: ocp
     timeout: 1h0m0s
     version: "4.15"
-  cron: 10 2 * * *
-  presubmit: true
   run_if_changed: ^(Containerfile.*|Makefile|manifests/.*|ols/.*|pyproject.toml|pdm.lock|scripts/.*|tests/.*)$
   steps:
     test:
@@ -135,8 +133,6 @@ tests:
     product: ocp
     timeout: 1h0m0s
     version: "4.16"
-  cron: 10 2 * * *
-  presubmit: true
   run_if_changed: ^(Containerfile.*|Makefile|manifests/.*|ols/.*|pyproject.toml|pdm.lock|scripts/.*|tests/.*)$
   steps:
     test:
@@ -211,8 +207,6 @@ tests:
     product: ocp
     timeout: 1h0m0s
     version: "4.17"
-  cron: 10 2 * * *
-  presubmit: true
   run_if_changed: ^(Containerfile.*|Makefile|manifests/.*|ols/.*|pyproject.toml|pdm.lock|scripts/.*|tests/.*)$
   steps:
     test:
